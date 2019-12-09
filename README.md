@@ -10,7 +10,6 @@ liens vers les services qui l'utilisent.
 
 [![ruby](https://img.shields.io/badge/ruby-v2.5.1-informational)](https://ruby-doc.org/stdlib-2.5.1/)
 
-
 ## Public visé
 
 api.gouv.fr s'adresse avant tout aux créateurs de services, les consommateurs
@@ -23,30 +22,22 @@ Les fournisseurs, de leur côté, ont avec ce catalogue un moyen simple de faire
 
 ### Réutilisateur d'API ? [Ajoutez votre service](https://github.com/betagouv/api.gouv.fr/blob/master/CONTRIBUTING.md#ajouter-un-service) !
 
-
 ## Installation locale
-
-Nous utilisons docker, il vous faut donc installer une version au moins égale de :
-
-[![docker-19.03](https://img.shields.io/badge/docker-v19.03-informational)](https://docs.docker.com/engine/installation/)
-
-[![docker-compose-1.25](https://img.shields.io/badge/docker--compose-v1.25-informational)](https://docs.docker.com/compose/install/)
 
 Pour récupérer les sources :
 
-``` sh
+```sh
 git clone https://github.com/betagouv/api.gouv.fr.git
 cd api.gouv.fr
 ```
 
 Pour lancer le serveur en mode dev :
 
-``` sh
-docker-compose up
+```sh
+yarn dev
 ```
 
-Puis il suffit de se rendre sur http://localhost:4000
-
+Puis il suffit de se rendre sur http://localhost:3000
 
 ## Déploiement
 
@@ -62,4 +53,3 @@ utilise [GitHub flow](https://guides.github.com/introduction/flow/).
 ### Développement
 
 Chaque pull request est déployé dans des [review app](https://devcenter.heroku.com/articles/github-integration-review-apps) sur [Heroku](https://dashboard.heroku.com/)
-
